@@ -29,7 +29,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int i) {
-        return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_recycler_card_home, parent, false));
+        return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_recycler_home, parent, false));
     }
 
     @Override

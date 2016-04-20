@@ -1,27 +1,55 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- your app branding color for the app bar -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <!-- darker variant for the status bar and contextual app bars -->
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <!-- theme UI controls like checkboxes and text fields -->
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    <style name="AppThemeCompat" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/colorWhite</item>
 
-    <!-- Base application theme. -->
-    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        &lt;!&ndash; Customize your theme here. &ndash;&gt;
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>-->
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!--//FULL SCREEN-->
+    <style name="AppFullScreenTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!-- STYLE UNTUK GAYA TEKS JUDUL  -->
+    <style name="AppTheme.ActionBarStyle.TitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+
+    <!-- STYLE UNTUK GAYA TEKS SUBJUDUL -->
+    <style name="AppTheme.ActionBar.subtitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="AppTheme.CollapsingToolbar.TitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+
+    <!--TEMA TEKS TAB ACTION BAR-->
+    <!--<style name="AppCompatTheme.ActionBarTabTextStyle" parent="@style/Base.TextAppearance.AppCompat">
+        <item name="android:textColor">@color/tab_teks_color_selector</item>
+        <item name="android:textSize">@dimen/ukuran14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>-->
 
 </resources>

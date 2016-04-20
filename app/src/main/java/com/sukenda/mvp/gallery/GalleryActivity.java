@@ -1,6 +1,7 @@
 package com.sukenda.mvp.gallery;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,8 +11,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.sukenda.mvp.R;
-import com.sukenda.mvp.entity.Dummy;
 import com.sukenda.mvp.adapter.HomeAdapter;
+import com.sukenda.mvp.entity.Dummy;
 
 import java.util.List;
 
@@ -34,6 +35,12 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
         setContentView(R.layout.gallery_activity);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView_gallery);
         galleryPresenter.load();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            // Call some material design APIs here
+        } else {
+            // Implement this feature without material design
+        }
     }
 
     @Override
