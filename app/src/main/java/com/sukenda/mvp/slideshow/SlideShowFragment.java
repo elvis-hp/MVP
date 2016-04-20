@@ -52,6 +52,12 @@ public class SlideShowFragment extends Fragment implements SlideShowView {
     }
 
     @Override
+    public void onDestroy() {
+        slideShowPresenter.detachView();
+        super.onDestroy();
+    }
+
+    @Override
     public Context getContext() {
         return getActivity().getApplicationContext();
     }
