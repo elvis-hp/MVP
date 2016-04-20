@@ -1,2 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_3a407b117310298d5bd9e0fcba44ebec0dcdc257/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_6359a3ac3be6142721f52223dde2934be0648b64/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_db4c3d817c5c0540b37c0934011c636782a38d6a/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_2f0d73b1c738a7e628fd6d7f039fb3d432d78341/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_3242334c3ad4dfa38f8717b8d3410f2fdeb2ec9d/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="51c796f8fa0ed1b6b3877d062d93f3064c547035">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_47d53bd7ee968dfdf6e5f0e419f566acfcdfb4a1/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9a5868e63bde3bc0ccc1c8e38a98488f503ff5f7">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_fb03176b919145dc6633edaad136a031a3c366fc/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_d1914bdbcaca4844f7e65f55ff361650aa29d268/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Apps/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_c18fb0ff2692d26f69bbc01e25a1ff7ca9407057/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_cae1b81e61987ffbf3d80a129904512dd3277d94/classes.dex" />
+    </item>
+    <item
+        jar="/home/sukenda/Learning/MVP/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="/home/sukenda/Learning/MVP/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.3.0_cc141659cc23514ccc88015ddd632f6c6e86329f/classes.dex" />
+    </item>
+
+</items>
