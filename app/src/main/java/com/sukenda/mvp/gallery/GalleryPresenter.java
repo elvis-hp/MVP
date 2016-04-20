@@ -1,4 +1,4 @@
-package com.sukenda.mvp.gellery;
+package com.sukenda.mvp.gallery;
 
 import com.sukenda.mvp.BasePresenter;
 import com.sukenda.mvp.entity.Dummy;
@@ -25,7 +25,7 @@ public class GalleryPresenter implements BasePresenter<GalleryView> {
         this.galleryView = null;
     }
 
-    private void load() {
+    public void load() {
         List<Dummy> dummies = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             dummies.add(new Dummy());

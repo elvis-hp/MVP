@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home.HomeActivity"
-            android:label="HOME"/>
+            android:name=".gallery.GalleryActivity"
+            android:label="GALLERY"/>
     </application>
 
 </manifest>

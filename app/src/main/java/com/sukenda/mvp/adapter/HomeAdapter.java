@@ -1,4 +1,4 @@
-package com.sukenda.mvp.home;
+package com.sukenda.mvp.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

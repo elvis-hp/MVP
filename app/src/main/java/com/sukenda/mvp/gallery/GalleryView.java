@@ -1,6 +1,7 @@
-package com.sukenda.mvp.gellery;
+package com.sukenda.mvp.gallery;
 
 
+import com.sukenda.mvp.BaseView;
 import com.sukenda.mvp.entity.Dummy;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
  * Project : MaterialLayout
  * Email : soekenda09@gmail.com
  */
-public interface GalleryView {
+public interface GalleryView extends BaseView {
 
     void setItems(List<Dummy> items);
 }
