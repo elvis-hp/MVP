@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Created by sukenda on 18/04/16.
- * Project : MaterialLayout
+ * Project : MVP
  * Email : soekenda09@gmail.com
  */
 public class GalleryPresenter implements BasePresenter<GalleryView> {
