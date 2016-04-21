@@ -1,18 +1,18 @@
 package com.sukenda.mvp.service;
 
+
 import com.sukenda.mvp.entity.Repository;
 import com.sukenda.mvp.entity.User;
 
 import java.util.List;
 
+import retrofit.Call;
 import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
 import retrofit.RxJavaCallAdapterFactory;
 import retrofit.http.GET;
 import retrofit.http.Path;
 import retrofit.http.Url;
-import rx.Observable;
-
 
 /**
  * Created by sukenda on 21/04/16.
@@ -22,10 +22,10 @@ import rx.Observable;
 public interface GithubService {
 
     @GET("users/{username}/repos")
-    rx.Observable<List<Repository>> publicRepositories(@Path("username") String username);
+    Call<List<Repository>> publicRepositories(@Path("username") String username);
 
     @GET
-    Observable<User> userFromUrl(@Url String userUrl);
+    Call<User> userFromUrl(@Url String userUrl);
 
     class Factory {
         public static GithubService create() {

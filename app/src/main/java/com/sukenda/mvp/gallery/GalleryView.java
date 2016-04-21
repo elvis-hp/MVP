@@ -13,5 +13,5 @@ import java.util.List;
  */
 public interface GalleryView extends BaseView {
 
-    void setIRepositories(List<Repository> items);
+    void setRepositories(List<Repository> items);
 }

@@ -22,6 +22,7 @@ public class MVPApplication extends Application {
         if (githubService == null) {
             githubService = GithubService.Factory.create();
         }
+
         return githubService;
     }
 }

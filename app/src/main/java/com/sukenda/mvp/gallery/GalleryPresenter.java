@@ -7,7 +7,9 @@ import com.sukenda.mvp.service.GithubService;
 
 import java.util.List;
 
-import rx.Subscriber;
+import retrofit.Callback;
+import retrofit.Response;
+import retrofit.Retrofit;
 
 /**
  * Created by sukenda on 18/04/16.
@@ -17,7 +19,6 @@ import rx.Subscriber;
 public class GalleryPresenter implements BasePresenter<GalleryView> {
 
     private GalleryView galleryView;
-    private List<Repository> repositories;
 
     @Override
     public void attachView(GalleryView galleryView) {
@@ -34,22 +35,16 @@ public class GalleryPresenter implements BasePresenter<GalleryView> {
         if (username.isEmpty()) return;
         MVPApplication application = MVPApplication.get(galleryView.getContext());
         GithubService githubService = application.getGithubService();
-        githubService.publicRepositories(username).subscribe(new Subscriber<List<Repository>>() {
+        githubService.publicRepositories(username).enqueue(new Callback<List<Repository>>() {
             @Override
-            public void onCompleted() {
-                if (!repositories.isEmpty()) {
-                    galleryView.setIRepositories(repositories);
+            public void onResponse(Response<List<Repository>> response, Retrofit retrofit) {
+                if (response.isSuccess()) {
+                    galleryView.setRepositories(response.body());
                 }
             }
 
             @Override
-            public void onError(Throwable e) {
-
-            }
-
-            @Override
-            public void onNext(List<Repository> repositories) {
-                GalleryPresenter.this.repositories = repositories;
+            public void onFailure(Throwable t) {
             }
         });
     }

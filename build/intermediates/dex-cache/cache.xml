@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="D:\Office\MVP\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="4cd7a59ee7fa0f9dc3d0d2bb4bae0a7439af86f0">
-        <dex dex="D:\Office\MVP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3677778ca20a38687e7dfbfeafa534df875bcad2\classes.dex" />
-    </item>
-
-</items>
+<items version="2" />

@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import com.sukenda.mvp.R;
 import com.sukenda.mvp.adapter.GalleryAdapter;
-import com.sukenda.mvp.adapter.HomeAdapter;
 import com.sukenda.mvp.entity.Repository;
 
 import java.util.List;
@@ -45,10 +44,10 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
     }
 
     @Override
-    public void setIRepositories(List<Repository> repositories) {
+    public void setRepositories(List<Repository> repositories) {
         setupRecyclerView(recyclerView, repositories);
 
-        HomeAdapter adapter = (HomeAdapter) recyclerView.getAdapter();
+        GalleryAdapter adapter = (GalleryAdapter) recyclerView.getAdapter();
         adapter.notifyDataSetChanged();
     }
 
@@ -64,15 +63,15 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
     }
 
     private void setupRecyclerView(RecyclerView recyclerView, List<Repository> repositories) {
-        GalleryAdapter adapter = new GalleryAdapter(getContext(), repositories);
-        adapter.setOnItemClickListener(new GalleryAdapter.OnItemClickListener() {
+        GalleryAdapter galleryAdapter = new GalleryAdapter(getContext(), repositories);
+        galleryAdapter.setOnItemClickListener(new GalleryAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 Toast.makeText(getContext(), "USER " + position, Toast.LENGTH_LONG).show();
             }
         });
 
-        recyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(galleryAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
