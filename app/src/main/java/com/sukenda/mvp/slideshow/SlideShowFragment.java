@@ -46,9 +46,7 @@ public class SlideShowFragment extends Fragment implements SlideShowView {
     @Override
     public void setItems(List<Dummy> items) {
         setupRecyclerView(recyclerView, items);
-
-        HomeAdapter adapter = (HomeAdapter) recyclerView.getAdapter();
-        adapter.notifyDataSetChanged();
+        recyclerView.getAdapter().notifyDataSetChanged();
     }
 
     @Override
