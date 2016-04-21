@@ -11,8 +11,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.sukenda.mvp.R;
+import com.sukenda.mvp.adapter.GalleryAdapter;
 import com.sukenda.mvp.adapter.HomeAdapter;
-import com.sukenda.mvp.entity.Dummy;
+import com.sukenda.mvp.entity.Repository;
 
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
 
         setContentView(R.layout.gallery_activity);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView_gallery);
-        galleryPresenter.load();
+        galleryPresenter.loadRepositories("sukenda");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             // Call some material design APIs here
@@ -44,8 +45,8 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
     }
 
     @Override
-    public void setItems(List<Dummy> items) {
-        setupRecyclerView(recyclerView, items);
+    public void setIRepositories(List<Repository> repositories) {
+        setupRecyclerView(recyclerView, repositories);
 
         HomeAdapter adapter = (HomeAdapter) recyclerView.getAdapter();
         adapter.notifyDataSetChanged();
@@ -62,9 +63,9 @@ public class GalleryActivity extends AppCompatActivity implements GalleryView {
         return this;
     }
 
-    private void setupRecyclerView(RecyclerView recyclerView, List<Dummy> users) {
-        HomeAdapter adapter = new HomeAdapter(getContext(), users);
-        adapter.setOnItemClickListener(new HomeAdapter.OnItemClickListener() {
+    private void setupRecyclerView(RecyclerView recyclerView, List<Repository> repositories) {
+        GalleryAdapter adapter = new GalleryAdapter(getContext(), repositories);
+        adapter.setOnItemClickListener(new GalleryAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 Toast.makeText(getContext(), "USER " + position, Toast.LENGTH_LONG).show();

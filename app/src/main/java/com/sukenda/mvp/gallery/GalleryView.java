@@ -2,7 +2,7 @@ package com.sukenda.mvp.gallery;
 
 
 import com.sukenda.mvp.BaseView;
-import com.sukenda.mvp.entity.Dummy;
+import com.sukenda.mvp.entity.Repository;
 
 import java.util.List;
 
@@ -13,5 +13,5 @@ import java.util.List;
  */
 public interface GalleryView extends BaseView {
 
-    void setItems(List<Dummy> items);
+    void setIRepositories(List<Repository> items);
 }
